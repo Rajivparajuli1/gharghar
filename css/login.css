@@ -1,0 +1,26 @@
+
+
+@media screen and (max-width : 767px){
+.login_1{
+width:80%; 
+ }
+.btn-facebook{
+margin-bottom:10px; 
+ }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.btn-facebook{
+margin-bottom:10px; 
+ }
+ }
+@media (min-width:992px) and (max-width:1200px) {
+
+ }
+@media (min-width:1201px) and (max-width:1350px) {
+
+ }
+
+
+
+

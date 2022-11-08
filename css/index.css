@@ -1,0 +1,187 @@
+
+.center_home {
+    background-image: url(../img/img1.jpeg);
+	background-position:center;
+}
+.center_home_m{
+  padding-top: 250px;
+  padding-bottom:250px;
+   }
+.center_home_1i{
+margin-top:30px; 
+ }
+.center_home_1i1 .form-control{
+ height:51px;
+ font-size:16px;
+ border-radius:0;
+ border:none;
+ }
+.center_home_1i1  ::placeholder {
+  color: #666;
+  opacity: 1; 
+}
+#location{
+padding-top:50px;
+padding-bottom:50px;
+ }
+.location_1i1 img{
+min-height:320px;
+ }
+.location_1i2{
+background:#00000061;
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+padding-top:125px;
+ }
+.location_1i{
+position:relative; 
+ }
+.location_1i:hover{
+opacity:0.8;
+ }
+.location_1i2 a:hover{
+color:#fff; 
+ }
+.location_1{
+margin-top:30px; 
+ }
+
+@media screen and (max-width : 767px){
+.center_home_m{
+padding-top:80px;
+padding-bottom:100px; 
+ }
+.center_home_1i1 {
+margin-top:10px; 
+ }
+.location_1i {
+margin-top:10px; 
+ }
+.client_1l {
+text-align:center;
+margin-bottom:15px; 
+ }
+.client_1ri {
+margin-top:10px; 
+ }
+.price_1i {
+margin-top:15px; 
+ }
+.places_1{
+width:100%; 
+ }
+.work_h_1i {
+margin-top:15px; 
+ }
+.work_h_1ii{
+width:32%; 
+ }
+.agent_h_1i {
+margin-top:10px; 
+ }
+#work_h{
+overflow:hidden; 
+ }
+}
+.navbar-brand:hover
+{
+  filter: saturate(05);
+}
+#tab
+{
+  width: 100%;
+}
+.main
+{
+  color: rgb(92, 245, 247);
+  text-align:center;
+  font-size: 30px;
+  margin-bottom: 6px;
+  text-decoration-line: underline;
+  filter: saturate(20);
+}
+.small
+{
+  color: rgb(19, 43, 44);
+  text-align: center;
+  font-size: small;
+  font-size: 20px;
+  margin: 5px;
+  filter: saturate(20);
+}
+.describe
+{
+  color: rgb(19, 43, 44);
+  filter: saturate(20);
+  text-align: center;
+}
+.linkss
+{
+  font-size: 20px;
+  color:rgb(19, 43, 44);
+  margin-top: 0px;
+  margin-left: 50px;
+}
+.tag_menu
+{
+  border-radius: 30px;
+  margin-top: 20px;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+#about
+{
+  height: 300px;
+}
+.logo
+{
+  margin-left: 90px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.logo:hover
+{
+  filter: saturate(5);
+}
+.button
+{
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.butten:hover
+{
+  border-radius: 30px;
+}
+#about
+{
+  background-color: #90e0ef;
+}
+.fab:hover
+{
+  color: black;
+}
+@media (min-width:768px) and (max-width:991px) {
+.work_h_1ii{
+width:38%; 
+ }
+.agent_h_1i .bg_1{
+font-size:16px; 
+ }
+ }
+@media (min-width:992px) and (max-width:1200px) {
+.work_h_1ii{
+width:30%; 
+ }
+ }
+@media (min-width:1201px) and (max-width:1350px) {
+
+ }
+
+
+
+
