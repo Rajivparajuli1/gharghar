@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/global.css" rel="stylesheet">
+    <link href="css/element.css" rel="stylesheet">
+	<script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+* {
+    margin: 0;
+}
+body
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: url(img/img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.main {
+    margin-top: 150px;
+    margin-left: 29%;
+    font-size: 28px;
+    padding: 0 10px;
+    width: 50%;
+}
+.main h2 {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.main .card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+    color: black;
+}
+.main .card table {
+    border: none;
+    font-size: 20px;
+    height: 270px;
+    width: 80%;
+}
+.edit {
+    position: absolute;
+    color: #e7e7e8;
+    right: 14%;
+}
+.tag_menu
+{
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.topic
+{
+    margin-left: 250px;
+}
+button
+{
+  font-size: 25px;
+  height: 50px;
+  width: 140px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: rgba(36,160,237,0.4);
+  margin-left: 700px;
+}
+button:hover
+{
+  border-radius: 30px;
+  background-color:  rgb(64, 143, 246);
+}
+ </style>
+</head>
+<body>
+    <section id="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <a class="navbar-brand" href="renterdisplay1.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="tag_menu" href="renterdisplay1.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="tag_menu" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="main">
+        <h2 class="topic">Renter Details</h2>
+        <div class="card">
+            <div class="card-body">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td>rajiv parajuli</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td>rajivprs@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Username</td>
+                            <td>:</td>
+                            <td>iamrajiv</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>:</td>
+                            <td>Pokhara, Nepal</td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td>:</td>
+                            <td>9826182347</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="update"> <button>Update</button></div> 
+</body>
+</html>

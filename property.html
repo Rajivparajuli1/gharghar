@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Home</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/element.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+	<script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+body{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: url(img/img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+main
+{
+  position: absolute;
+  margin-right: 88%;
+  margin-bottom: 52%;
+}
+.tag_menu
+{
+	border-radius: 30px;
+}
+.logo
+{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 10px;
+}
+.logo:hover
+{
+    filter: saturate(10);
+    transition: filter 0.4s ease-in-out;
+}
+.contains{
+  height: 50%;
+  height: auto;
+  width: 700px;
+  background-color: aliceblue;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  margin-top: px;
+}
+.contains .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.contents form .user-details{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.selects
+{
+  margin-right: 15px;
+}
+form .input-box span.details{
+  display: block;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+button
+{
+    background-color: rgba(36,160,237,0.4);
+    border: none;
+    position: relative;
+    padding: 9px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 0px 35% ;
+    margin-bottom: 10px;
+}
+button:hover
+{
+    background-color: rgb(64, 143, 246);
+}
+.title
+{
+  width: 70%;
+}
+span.dot
+{
+  margin-left: 25px;
+}
+.button
+{
+	border-radius: 30px;
+	border: none;
+	background-color:rgb(64, 143, 246);
+	margin-left: 230px;
+	color: aliceblue;
+}
+    </style>
+  </head>
+  
+<body>
+<section id="header">
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="tag_menu" href="index.html">Home</a>
+					</li>
+				</ul>	 
+			</div>
+        </div>
+    </nav>
+</section>
+<section>
+	<div class="contains">
+		<div class="title">Add a Property</div>
+		<div class="contents">
+		  <form action="propertyAdd.php" method="POST">
+			<div class="user-details">
+			  <div class="inputbox">
+				<span class="details">Title : </span>
+				<input class="title" type="text" name="title" required><br><br>
+			  </div>
+			  <div class="inputbox">
+				  <span class="details">Select Type : </span>
+				  <select name="type" class="type">
+					<option value="room">Room</option>
+					<option value="flat">Flat</option>
+				  </select> 
+			  </div><br>
+			  <div style="display:none;" id="no_of">
+			  <div class="inputbox">
+				<span class="details">No of bedroom : </span>
+				<input class="small" type="number" name="no_of_bedroom">
+				<span class="details">No of restroom : </span>
+				<input class="small" type="number" name="no_of_restroom"><br><br>
+			  </div>
+			  <div class="inputbox">
+				<span class="details">No of kitchen : </span>
+				<input class="small" type="number" name="no_of_kitchen">
+				<span class="details">No of halls : </span>
+				<input class="small" type="number" name="no_of_hall"><br><br>
+			  </div>
+			  </div>
+			  <div class="inputbox">
+				<span class="details">Price : </span>
+				<input class="price" type="number" name="price" required><br><br>
+			  </div>
+				<div class="inputbox">
+				  <span class="details">Number of rooms : </span>
+				  <select name="rooms" class="selects">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option> 
+				  </select>
+				  <span class="details"> Area (in square feet) :  </span>
+				<input type="number" name="area">
+				 <br><br>
+				</div> 
+			  </div>  
+			  <div class="inputbox">
+				  <span class="details">Address : </span>
+				  <input placeholder="City"  type="text" name="city" required>
+				  <input placeholder="Street no" type="text" name="tole" required>
+				  <input placeholder="House Number" type="text" name="houseno" required><br><br>
+			  </div>
+			  <div class="inputbox">
+				<span>Add three images : </span><br><br>
+				<input type="file" name="photo1" required>
+			  </div><br>
+			  <div class="inputbox">
+				<input type="file" name="photo2" required>
+			  </div><br>
+				<input  type="file" name="photo3" required>
+			  </div><br>
+			  <div class="inputbox">
+				<textarea name="info" placeholder="Any Additional Information" cols="70" rows="5" required ></textarea>
+			  </div><br>
+			  <div>
+				<input class="button" type="submit" value="Add">
+			 </div>
+			</div>
+		  </form>
+		</div>
+	  </div>
+	  <script>const mySlider = document.getElementById("my-slider");
+	  const sliderValue = document.getElementById("slider-value");
+	  
+	  function slider(){
+		  valPercent = (mySlider.value / mySlider.max)*100;
+		  mySlider.style.background = `linear-gradient(to right, #3264fe ${valPercent}%, #d5d5d5 ${valPercent}%)`;
+		  sliderValue.textContent = mySlider.value;
+	  }
+	  slider();</script>
+	  <script>$(document).ready(function(){
+		$(".type").change(function(){
+		  var inputs = $('.type').val();
+		  if(inputs == "flat"){
+			  $("#no_of").css("display", "block");
+		  }
+		  else{
+			  $("#no_of").css("display", "none");
+		  }
+		});
+	  });</script>
+</section>
